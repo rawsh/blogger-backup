@@ -4,7 +4,7 @@
 
 ### How to use:
 
-- Download with `git clone https://github.com/rawsh/blogger-backup.git` or with zip
+- Download with `git clone https://github.com/rawsh/blogger-backup.git` or with the [Releases Page.](https://github.com/rawsh/blogger-backup/releases)
 - Edit `backupBlogger.py` and change the blogurl variable on line 20.
 - The program pulls the name of your blog from blogspot. `${Blog Name}`
 - Run the program
