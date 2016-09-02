@@ -10,3 +10,5 @@
 - Run the program
 - The image files will show in `./${Blog Name} Backup/images` and the html will be in `./${Blog Name} Backup`.
 - Open `./${Blog Name} Backup/index.html` in a browser to get a list of links to downloaded posts.
+
+Inspired by broken wget that wouldn't download external recourses, and screwed up all the folders.
