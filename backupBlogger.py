@@ -17,7 +17,7 @@ print "Getting info on blog"
 #change these values
 attribution = True #displays a message with my name at the bottom of downloaded posts
 max_results = 30 #max number of posts to backup
-blogurl = "googleblog.blogspot.com" #url of your blogger blog. no "http://". CHANGE THIS
+blogurl = "washbourne.blogspot.com" #url of your blogger blog. no "http://". CHANGE THIS
 
 
 url = "http://" + blogurl + "/feeds/posts/default?orderby=published&max-results="+str(max_results)+"&alt=json" #max-posts is how many this parses.
@@ -44,7 +44,7 @@ def DownloadImages(feed):
 
             for i in range(len(images)):
                 print "Downloaded " + str(i) + " out of " + str(len(images)) #download images
-                urllib.urlretrieve(images[i]["src"], os.getcwd()+"/"+feed["title"]["$t"].encode('ascii', 'ignore')+" Backup"+"/images/"+entry["title"]["$t"].encode('ascii', 'ignore')+"/"+''.join([i for i in os.path.basename(images[i]["src"].encode('ascii', 'ignore')) if i.isalpha() or i == "."]), context=ctx)
+                urllib.urlretrieve(images[i]["src"], os.getcwd()+"/"+feed["title"]["$t"].encode('ascii', 'ignore')+" Backup"+"/images/"+entry["title"]["$t"].encode('ascii', 'ignore')+"/"+ str(i)+''.join([i for i in os.path.basename(images[i]["src"].encode('ascii', 'ignore')) if i.isalpha() or i == "."]), context=ctx)
 
 def DownloadArticles(feed):
     ''' Download articles from blogger given feed'''
@@ -78,7 +78,7 @@ def DownloadArticles(feed):
             images = html.findAll('img')
 
             for i in range(len(images)): #replace src
-                images[i]["src"] = "./images/"+entry["title"]["$t"].encode('ascii', 'ignore')+"/"+ ''.join([x for x in os.path.basename(images[i]["src"].encode('ascii', 'ignore')) if x.isalpha() or x == "."])
+                images[i]["src"] = "./images/"+entry["title"]["$t"].encode('ascii', 'ignore')+"/"+ str(i) + ''.join([x for x in os.path.basename(images[i]["src"].encode('ascii', 'ignore')) if x.isalpha() or x == "."])
 
             target = open(os.getcwd()+"/"+feed["title"]["$t"]+" Backup/"+entry["title"]["$t"].encode('ascii', 'ignore')+".html","ab")
             target.truncate()
