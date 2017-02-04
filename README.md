@@ -4,6 +4,8 @@ Backs up your blog from blogger using python.
 
 This will download all posts as simple html (without website markup) and all images, then point the local posts to the local images. This will help you get past the (bull)shit that google does with their images service (e.g. converts to webp, downsizes, has weird urls etc.)
 
+![excellent.](http://i.cubeupload.com/MnHkzk.png)
+
 ### How to use:
 
 - Download with `git clone https://github.com/rawsh/blogger-backup.git` or with the [Releases Page.](https://github.com/rawsh/blogger-backup/releases)
