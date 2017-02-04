@@ -6,6 +6,8 @@ This will download all posts as simple html (without website markup) and all ima
 
 ![excellent.](http://i.cubeupload.com/MnHkzk.png)
 
+^ server.py here is just the [default simplehttpserver file](https://docs.python.org/2/library/simplehttpserver.html).
+
 ### How to use:
 
 - Download with `git clone https://github.com/rawsh/blogger-backup.git` or with the [Releases Page.](https://github.com/rawsh/blogger-backup/releases)
