@@ -1,6 +1,8 @@
 # Blogger Backup
 
-## Backs up your blog from blogger using python.
+Backs up your blog from blogger using python.
+
+This will download all posts as simple html (without website markup) and all images, then point the local posts to the local images. This will help you get past the (bull)shit that google does with their images service (e.g. converts to webp, downsizes, has weird urls etc.)
 
 ### How to use:
 
