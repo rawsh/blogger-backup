@@ -1,8 +1,10 @@
 Examples:
 
-[google blog index page](https://cdn.rawgit.com/rawsh/blogger-backup/master/Official%20Google%20Blog%20Backup/index.html)
+[index page](https://cdn.rawgit.com/rawsh/blogger-backup/master/Washbourne%20Chronicles%20Backup/index.html)
 
-[google blog post](https://cdn.rawgit.com/rawsh/blogger-backup/master/Official%20Google%20Blog%20Backup/OnHub%20turns%20one%20today.html)
+[blog post](https://cdn.rawgit.com/rawsh/blogger-backup/master/Washbourne%20Chronicles%20Backup/2014.10.01%20--%20WA:%20Monkey%20Mia,%20Sharks%20Bay,%20Karijini.html)
+
+[source](http://washbourne.blogspot.com/)
 
 # Blogger Backup
 
